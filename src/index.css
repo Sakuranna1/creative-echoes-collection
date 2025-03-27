@@ -146,7 +146,7 @@
     transform: translateY(0);
   }
   
-  /* New blur and glass styles */
+  /* Enhanced blur and glass styles */
   .blur-backdrop {
     @apply relative overflow-hidden;
   }
@@ -186,6 +186,17 @@
   50% { opacity: 0.8; transform: scale(1.05); }
 }
 
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes slow-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 @keyframes colorshift {
   0% { filter: hue-rotate(0deg); }
   50% { filter: hue-rotate(180deg); }
@@ -194,10 +205,30 @@
 
 @layer utilities {
   .animate-pulse {
-    animation: pulse 4s ease-in-out infinite;
+    animation: pulse 6s ease-in-out infinite;
+  }
+  
+  .animate-float {
+    animation: float 12s ease-in-out infinite;
+  }
+  
+  .animate-slow-spin {
+    animation: slow-spin 25s linear infinite;
   }
   
   .animate-colorshift {
-    animation: colorshift 20s linear infinite;
+    animation: colorshift 15s linear infinite;
+  }
+  
+  .blur-sm {
+    backdrop-filter: blur(4px);
+  }
+  
+  .blur-md {
+    backdrop-filter: blur(8px);
+  }
+  
+  .blur-lg {
+    backdrop-filter: blur(16px);
   }
 }
