@@ -35,9 +35,9 @@ const Hero = () => {
     <section 
       ref={sectionRef}
       id="home" 
-      className="intro-section min-h-screen flex flex-col justify-center relative pt-28 pb-16"
+      className="intro-section min-h-screen flex flex-col justify-center relative pt-28 pb-16 overflow-hidden"
     >
-      <div className="container-custom">
+      <div className="container-custom relative z-10">
         <div className="max-w-4xl">
           <div className="inline-block rounded-full px-3 py-1 bg-secondary text-sm font-medium mb-6 opacity-0 translate-y-8 transition-all duration-500 delay-100 animate-on-load">
             Product Designer
@@ -62,15 +62,28 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block opacity-0 translate-y-8 transition-all duration-700 delay-500 animate-on-load">
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block opacity-0 translate-y-8 transition-all duration-700 delay-500 animate-on-load z-10">
         <a href="#work" className="rounded-full bg-white/30 backdrop-blur-sm p-3 border border-white/20 hover:bg-white/50 transition-colors duration-300">
           <ArrowDownIcon size={20} />
         </a>
       </div>
       
-      {/* Abstract shapes in background */}
-      <div className="absolute top-1/3 right-10 w-64 h-64 rounded-full bg-gradient-to-br from-blue-100 to-purple-100 blur-3xl opacity-60 animate-slow-spin" />
-      <div className="absolute bottom-1/4 left-10 w-56 h-56 rounded-full bg-gradient-to-tr from-amber-100 to-rose-100 blur-3xl opacity-50 animate-float" />
+      {/* Enhanced colorful background with more blur elements */}
+      <div className="absolute inset-0 overflow-hidden -z-10">
+        {/* Large primary gradient blob */}
+        <div className="absolute top-1/4 right-0 w-[40rem] h-[40rem] rounded-full bg-gradient-to-br from-blue-400/30 via-purple-400/40 to-primary/50 blur-[100px] opacity-80" />
+        
+        {/* Secondary warm gradient blob */}
+        <div className="absolute bottom-0 left-0 w-[35rem] h-[35rem] rounded-full bg-gradient-to-tr from-amber-300/30 via-rose-300/30 to-pink-400/40 blur-[100px] opacity-70" />
+        
+        {/* Accent smaller blobs */}
+        <div className="absolute top-1/3 left-1/4 w-64 h-64 rounded-full bg-gradient-to-r from-cyan-300/40 to-blue-400/30 blur-[80px] opacity-60 animate-float" />
+        <div className="absolute bottom-1/4 right-1/4 w-72 h-72 rounded-full bg-gradient-to-l from-violet-300/40 to-fuchsia-400/30 blur-[70px] opacity-60 animate-slow-spin" />
+        
+        {/* Small accent highlights */}
+        <div className="absolute top-2/3 left-1/3 w-32 h-32 rounded-full bg-yellow-300/30 blur-[50px] opacity-70 animate-pulse" />
+        <div className="absolute top-1/4 right-1/3 w-24 h-24 rounded-full bg-emerald-300/30 blur-[40px] opacity-70 animate-float" />
+      </div>
     </section>
   );
 };

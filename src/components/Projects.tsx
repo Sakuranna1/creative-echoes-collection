@@ -76,8 +76,16 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="work" className="py-20 bg-gradient-to-b from-background to-secondary/50" ref={sectionRef}>
-      <div className="container-custom">
+    <section id="work" className="py-20 relative overflow-hidden" ref={sectionRef}>
+      {/* Colorful background elements */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-background to-secondary/50 opacity-70"></div>
+        <div className="absolute top-1/4 right-10 w-96 h-96 rounded-full bg-gradient-to-br from-blue-200/40 to-purple-300/30 blur-[80px]"></div>
+        <div className="absolute bottom-1/3 left-20 w-80 h-80 rounded-full bg-gradient-to-tr from-amber-200/30 to-rose-200/20 blur-[70px]"></div>
+        <div className="absolute top-3/4 right-1/4 w-64 h-64 rounded-full bg-gradient-to-r from-emerald-200/30 to-cyan-200/30 blur-[60px]"></div>
+      </div>
+      
+      <div className="container-custom relative z-10">
         <div className="text-center mb-16 animate-on-scroll">
           <Badge variant="outline" className="mb-4">Portfolio</Badge>
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Selected Projects</h2>
