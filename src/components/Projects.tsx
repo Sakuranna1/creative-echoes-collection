@@ -77,23 +77,31 @@ const Projects = () => {
 
   return (
     <section id="work" className="py-20 relative overflow-hidden" ref={sectionRef}>
-      {/* Enhanced colorful background elements */}
+      {/* Enhanced super colorful background elements */}
       <div className="absolute inset-0 -z-10">
-        {/* Base gradient overlay */}
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-background via-secondary/20 to-secondary/60 opacity-80"></div>
+        {/* Base gradient overlay with increased opacity */}
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-background via-secondary/30 to-secondary/70 opacity-90"></div>
         
-        {/* Large colorful blobs */}
-        <div className="absolute top-[5%] right-[10%] w-[30rem] h-[30rem] rounded-full bg-gradient-to-br from-blue-400/50 via-indigo-500/40 to-violet-500/30 blur-[100px] opacity-70 animate-slow-spin"></div>
-        <div className="absolute bottom-[10%] left-[5%] w-[35rem] h-[35rem] rounded-full bg-gradient-to-tr from-amber-300/40 via-orange-400/30 to-rose-400/30 blur-[120px] opacity-70 animate-float"></div>
+        {/* Larger, more vibrant blobs */}
+        <div className="absolute top-[5%] right-[10%] w-[40rem] h-[40rem] rounded-full bg-gradient-to-br from-blue-500/60 via-indigo-600/50 to-violet-600/40 blur-[130px] opacity-80 animate-slow-spin"></div>
+        <div className="absolute bottom-[10%] left-[5%] w-[45rem] h-[45rem] rounded-full bg-gradient-to-tr from-amber-400/50 via-orange-500/40 to-rose-500/40 blur-[140px] opacity-80 animate-float"></div>
         
-        {/* Medium sized accent blobs */}
-        <div className="absolute top-1/3 right-1/4 w-80 h-80 rounded-full bg-gradient-to-bl from-emerald-400/30 via-teal-500/30 to-cyan-500/20 blur-[80px] opacity-70 animate-pulse"></div>
-        <div className="absolute bottom-1/4 left-1/3 w-72 h-72 rounded-full bg-gradient-to-tr from-fuchsia-400/30 via-pink-500/30 to-rose-400/20 blur-[70px] opacity-70 animate-float"></div>
+        {/* Medium accent blobs with increased saturation */}
+        <div className="absolute top-1/3 right-1/4 w-96 h-96 rounded-full bg-gradient-to-bl from-emerald-500/50 via-teal-600/40 to-cyan-600/30 blur-[100px] opacity-80 animate-pulse"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-[30rem] h-[30rem] rounded-full bg-gradient-to-tr from-fuchsia-500/40 via-pink-600/30 to-rose-500/30 blur-[110px] opacity-80 animate-float"></div>
         
-        {/* Small accent color pops */}
-        <div className="absolute top-2/3 right-1/3 w-48 h-48 rounded-full bg-gradient-to-r from-yellow-400/30 to-amber-500/20 blur-[60px] opacity-70 animate-pulse"></div>
-        <div className="absolute top-1/4 left-1/2 w-56 h-56 rounded-full bg-gradient-to-l from-purple-400/30 to-indigo-500/20 blur-[65px] opacity-70 animate-slow-spin"></div>
-        <div className="absolute bottom-1/2 right-[20%] w-40 h-40 rounded-full bg-gradient-to-t from-green-400/30 to-emerald-500/20 blur-[55px] opacity-70 animate-float"></div>
+        {/* New vibrant blob elements */}
+        <div className="absolute top-2/3 right-1/3 w-80 h-80 rounded-full bg-gradient-to-r from-yellow-500/50 to-amber-600/40 blur-[90px] opacity-80 animate-pulse"></div>
+        <div className="absolute top-1/4 left-1/2 w-72 h-72 rounded-full bg-gradient-to-l from-purple-500/50 to-indigo-600/40 blur-[85px] opacity-80 animate-slow-spin"></div>
+        <div className="absolute bottom-1/2 right-[20%] w-64 h-64 rounded-full bg-gradient-to-t from-green-500/40 to-emerald-600/30 blur-[80px] opacity-80 animate-float"></div>
+        
+        {/* Small bright accent pops */}
+        <div className="absolute top-[60%] right-[60%] w-48 h-48 rounded-full bg-sky-400/60 blur-[70px] opacity-90 animate-pulse"></div>
+        <div className="absolute bottom-[20%] right-[40%] w-44 h-44 rounded-full bg-lime-400/60 blur-[65px] opacity-90 animate-float"></div>
+        <div className="absolute top-[30%] left-[20%] w-40 h-40 rounded-full bg-pink-400/60 blur-[60px] opacity-90 animate-slow-spin"></div>
+        <div className="absolute bottom-[70%] left-[40%] w-36 h-36 rounded-full bg-amber-400/60 blur-[55px] opacity-90 animate-pulse"></div>
+        <div className="absolute top-[80%] right-[10%] w-32 h-32 rounded-full bg-violet-400/60 blur-[50px] opacity-90 animate-float"></div>
+        <div className="absolute top-[15%] left-[35%] w-28 h-28 rounded-full bg-red-400/60 blur-[45px] opacity-90 animate-slow-spin"></div>
       </div>
       
       <div className="container-custom relative z-10">

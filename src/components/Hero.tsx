@@ -68,28 +68,32 @@ const Hero = () => {
         </a>
       </div>
       
-      {/* Enhanced colorful background with many vibrant blur elements */}
+      {/* Vibrant colorful background with many more color elements */}
       <div className="absolute inset-0 overflow-hidden -z-10">
-        {/* Primary gradient blob - larger and more vibrant */}
-        <div className="absolute top-1/3 right-[10%] w-[45rem] h-[45rem] rounded-full bg-gradient-to-br from-blue-500/40 via-purple-500/50 to-primary/60 blur-[120px] opacity-90 animate-slow-spin" />
+        {/* Large primary blobs */}
+        <div className="absolute top-0 right-0 w-[55rem] h-[55rem] rounded-full bg-gradient-to-br from-blue-600/50 via-purple-600/50 to-violet-600/60 blur-[130px] opacity-90 animate-slow-spin" />
+        <div className="absolute -bottom-[15%] left-[5%] w-[50rem] h-[50rem] rounded-full bg-gradient-to-tr from-amber-500/50 via-rose-500/50 to-pink-600/60 blur-[120px] opacity-80 animate-float" />
         
-        {/* Secondary warm gradient blob */}
-        <div className="absolute -bottom-[10%] left-[5%] w-[40rem] h-[40rem] rounded-full bg-gradient-to-tr from-amber-400/40 via-rose-400/40 to-pink-500/50 blur-[100px] opacity-80 animate-float" />
+        {/* Medium accent blobs */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-gradient-to-r from-cyan-500/60 to-blue-600/50 blur-[100px] opacity-80 animate-float" />
+        <div className="absolute bottom-1/3 right-1/5 w-[30rem] h-[30rem] rounded-full bg-gradient-to-l from-violet-500/60 to-fuchsia-600/50 blur-[110px] opacity-80 animate-slow-spin" />
         
-        {/* Accent blobs - added more with various colors */}
-        <div className="absolute top-1/4 left-1/4 w-72 h-72 rounded-full bg-gradient-to-r from-cyan-400/50 to-blue-500/40 blur-[90px] opacity-70 animate-float" />
-        <div className="absolute bottom-1/3 right-1/5 w-80 h-80 rounded-full bg-gradient-to-l from-violet-400/50 to-fuchsia-500/40 blur-[80px] opacity-70 animate-slow-spin" />
+        {/* New vibrant elements */}
+        <div className="absolute top-1/2 left-[40%] w-80 h-80 rounded-full bg-gradient-to-br from-emerald-500/50 to-teal-600/40 blur-[90px] opacity-80 animate-pulse" />
+        <div className="absolute bottom-[20%] right-[30%] w-72 h-72 rounded-full bg-gradient-to-tl from-yellow-500/50 to-orange-600/40 blur-[85px] opacity-80 animate-float" />
+        <div className="absolute top-[15%] right-[25%] w-64 h-64 rounded-full bg-gradient-to-bl from-red-500/40 to-rose-600/30 blur-[80px] opacity-80 animate-pulse" />
         
-        {/* New colorful elements */}
-        <div className="absolute top-1/2 left-[40%] w-64 h-64 rounded-full bg-gradient-to-br from-emerald-400/40 to-teal-500/30 blur-[70px] opacity-80 animate-pulse" />
-        <div className="absolute bottom-[20%] right-[30%] w-48 h-48 rounded-full bg-gradient-to-tl from-yellow-400/40 to-orange-500/30 blur-[60px] opacity-70 animate-float" />
-        <div className="absolute top-[15%] right-[25%] w-40 h-40 rounded-full bg-gradient-to-bl from-red-400/30 to-rose-500/20 blur-[50px] opacity-70 animate-pulse" />
+        {/* Additional color pops */}
+        <div className="absolute top-2/3 left-1/3 w-52 h-52 rounded-full bg-yellow-400/50 blur-[75px] opacity-90 animate-pulse" />
+        <div className="absolute top-1/4 right-1/3 w-48 h-48 rounded-full bg-emerald-400/50 blur-[70px] opacity-90 animate-float" />
+        <div className="absolute bottom-1/4 left-[15%] w-44 h-44 rounded-full bg-indigo-500/40 blur-[65px] opacity-80 animate-slow-spin" />
+        <div className="absolute top-[40%] right-[60%] w-40 h-40 rounded-full bg-pink-400/50 blur-[60px] opacity-80 animate-pulse" />
         
-        {/* Small accent highlights */}
-        <div className="absolute top-2/3 left-1/3 w-36 h-36 rounded-full bg-yellow-300/40 blur-[60px] opacity-80 animate-pulse" />
-        <div className="absolute top-1/4 right-1/3 w-32 h-32 rounded-full bg-emerald-300/40 blur-[50px] opacity-80 animate-float" />
-        <div className="absolute bottom-1/4 left-[15%] w-28 h-28 rounded-full bg-indigo-400/30 blur-[45px] opacity-70 animate-slow-spin" />
-        <div className="absolute top-[40%] right-[60%] w-24 h-24 rounded-full bg-pink-300/40 blur-[40px] opacity-70 animate-pulse" />
+        {/* New small bright accent pops */}
+        <div className="absolute top-[30%] left-[10%] w-32 h-32 rounded-full bg-lime-400/60 blur-[55px] opacity-90 animate-float" />
+        <div className="absolute bottom-[10%] right-[15%] w-36 h-36 rounded-full bg-sky-400/60 blur-[58px] opacity-90 animate-pulse" />
+        <div className="absolute top-[75%] left-[60%] w-28 h-28 rounded-full bg-amber-400/60 blur-[50px] opacity-90 animate-slow-spin" />
+        <div className="absolute top-[10%] left-[40%] w-24 h-24 rounded-full bg-fuchsia-400/60 blur-[45px] opacity-90 animate-float" />
       </div>
     </section>
   );
