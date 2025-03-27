@@ -29,7 +29,7 @@ const Footer = () => {
             >
               <ArrowUpIcon size={18} />
             </button>
-            <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Ryan Miller. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Anna Danilov. All rights reserved.</p>
           </div>
         </div>
       </div>
